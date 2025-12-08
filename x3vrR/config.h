@@ -4,8 +4,10 @@
 
 #define PERMISSIVE_HOLD
 
+#define COMBO_TERM 100
+
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "x3vrR/3vRjJ7"
+#define SERIAL_NUMBER "x3vrR/LvNXwD"
 #define LAYER_STATE_8BIT
 #define COMBO_COUNT 13
 
