@@ -18,17 +18,17 @@ enum custom_keycodes {
 
 
 
-#define DUAL_FUNC_0 LT(12, KC_7)
-#define DUAL_FUNC_1 LT(10, KC_V)
-#define DUAL_FUNC_2 LT(13, KC_F21)
-#define DUAL_FUNC_3 LT(9, KC_W)
-#define DUAL_FUNC_4 LT(8, KC_F24)
-#define DUAL_FUNC_5 LT(4, KC_F12)
-#define DUAL_FUNC_6 LT(13, KC_6)
-#define DUAL_FUNC_7 LT(13, KC_K)
-#define DUAL_FUNC_8 LT(3, KC_F23)
-#define DUAL_FUNC_9 LT(10, KC_J)
-#define DUAL_FUNC_10 LT(3, KC_F4)
+#define DUAL_FUNC_0 LT(7, KC_F1)
+#define DUAL_FUNC_1 LT(14, KC_F13)
+#define DUAL_FUNC_2 LT(10, KC_G)
+#define DUAL_FUNC_3 LT(7, KC_F22)
+#define DUAL_FUNC_4 LT(2, KC_G)
+#define DUAL_FUNC_5 LT(13, KC_C)
+#define DUAL_FUNC_6 LT(11, KC_R)
+#define DUAL_FUNC_7 LT(14, KC_F20)
+#define DUAL_FUNC_8 LT(3, KC_F18)
+#define DUAL_FUNC_9 LT(2, KC_J)
+#define DUAL_FUNC_10 LT(5, KC_F12)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_voyager(
@@ -99,10 +99,9 @@ const uint16_t PROGMEM combo5[] = { KC_K, KC_L, KC_COLN, COMBO_END};
 const uint16_t PROGMEM combo6[] = { KC_J, KC_K, KC_L, KC_COLN, COMBO_END};
 const uint16_t PROGMEM combo7[] = { KC_F, KC_D, COMBO_END};
 const uint16_t PROGMEM combo8[] = { KC_D, KC_S, COMBO_END};
-const uint16_t PROGMEM combo9[] = { KC_A, KC_S, COMBO_END};
-const uint16_t PROGMEM combo10[] = { KC_F, KC_D, KC_S, COMBO_END};
-const uint16_t PROGMEM combo11[] = { KC_A, KC_S, KC_D, COMBO_END};
-const uint16_t PROGMEM combo12[] = { KC_A, KC_S, KC_D, KC_F, COMBO_END};
+const uint16_t PROGMEM combo9[] = { KC_F, KC_D, KC_S, COMBO_END};
+const uint16_t PROGMEM combo10[] = { KC_A, KC_S, KC_D, COMBO_END};
+const uint16_t PROGMEM combo11[] = { KC_A, KC_S, KC_D, KC_F, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo0, KC_LEFT_GUI),
@@ -114,10 +113,9 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo6, RALT(RCTL(KC_RIGHT_SHIFT))),
     COMBO(combo7, KC_LEFT_SHIFT),
     COMBO(combo8, KC_LEFT_CTRL),
-    COMBO(combo9, KC_LEFT_ALT),
-    COMBO(combo10, LCTL(KC_LEFT_SHIFT)),
-    COMBO(combo11, LALT(KC_LEFT_CTRL)),
-    COMBO(combo12, LALT(LCTL(KC_LEFT_SHIFT))),
+    COMBO(combo9, LCTL(KC_LEFT_SHIFT)),
+    COMBO(combo10, LALT(KC_LEFT_CTRL)),
+    COMBO(combo11, LALT(LCTL(KC_LEFT_SHIFT))),
 };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
